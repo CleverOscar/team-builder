@@ -33,7 +33,7 @@ function App() {
         Team 
         
           {team.map(member => 
-            <div> 
+            <div key={member.id}> 
               <h2>{member.name}</h2>
               <p>{member.email}</p>
               <p>{member.role}</p>

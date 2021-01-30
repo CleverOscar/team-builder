@@ -2,10 +2,10 @@ import React from 'react';
 
 const AddTeamMember = () => {
     return(
-        <div> 
+        <div className="formContainer"> 
             <h4>Add Team Member</h4>
 
-            <form>
+            <form className="form">
                 <label>
                     Team Members Name:
                     <input type='text' />
