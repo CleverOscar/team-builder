@@ -26,6 +26,13 @@ function App() {
       <h1>
         Team Builder App
       </h1>
+
+      <ul>
+        Team 
+        
+          {team.map(member => <li>{member.name}</li>)}
+       
+      </ul>
     </div>
   );
 }
