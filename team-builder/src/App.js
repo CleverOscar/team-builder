@@ -1,5 +1,7 @@
 import './App.css';
 import React, {useState} from 'react';
+import AddTeamMember from './Form';
+
 
 function App() {
 
@@ -27,12 +29,19 @@ function App() {
         Team Builder App
       </h1>
 
-      <ul>
+      <div>
         Team 
         
-          {team.map(member => <li>{member.name}</li>)}
-       
-      </ul>
+          {team.map(member => 
+            <div> 
+              <h2>{member.name}</h2>
+              <p>{member.email}</p>
+              <p>{member.role}</p>
+            </div>
+          )}
+      </div>
+
+      <AddTeamMember />
     </div>
   );
 }
