@@ -23,7 +23,10 @@ function App() {
   }]);
 
   const handleChange = event => {
-    setTeam({...team, [event.target.name]: event.target.value})
+
+    console.log(event.target.value)
+    // setTeam({...team, [event.target.name]: event.target.value})
+    // console.log(event.target.value)
   }
 
   const handleSubmit = event => {
