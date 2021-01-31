@@ -20,3 +20,8 @@ border: 5px solid red;
 .form label {
   margin: 10px;
 }
+
+.btn {
+  width: 50%;
+  margin: 0px  auto; 
+}

@@ -1,6 +1,8 @@
 import React from 'react';
 
-const AddTeamMember = () => {
+const AddTeamMember = (props) => {
+
+    console.log('props', props.handleChange)
     return(
         <div className="formContainer"> 
             <h4>Add Team Member</h4>
@@ -10,23 +12,29 @@ const AddTeamMember = () => {
                     Team Members Name:
                     <input
                     name="name"
-                    type='text' />
+                    type='text'
+                    onChange={props.handleChange}
+                    />
                 </label>
 
                 <label>
                     Email:
                     <input
                     name="email"
-                    type='text' />
+                    type='text'
+                    onChange={props.handleChange}
+                    />
                 </label>
                 
                 <label>
                     Role:
                     <input 
                     name="role"
-                    type='text' />
+                    type='text' 
+                    onChange={props.handleChange}
+                    />
                 </label>
-                <button>Submit</button>
+                <button className="btn">Submit</button>
             </form>
         </div>
     )
