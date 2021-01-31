@@ -8,18 +8,25 @@ const AddTeamMember = () => {
             <form className="form">
                 <label>
                     Team Members Name:
-                    <input type='text' />
+                    <input
+                    name="name"
+                    type='text' />
                 </label>
 
                 <label>
                     Email:
-                    <input type='text' />
+                    <input
+                    name="email"
+                    type='text' />
                 </label>
                 
                 <label>
                     Role:
-                    <input type='text' />
+                    <input 
+                    name="role"
+                    type='text' />
                 </label>
+                <button>Submit</button>
             </form>
         </div>
     )

@@ -22,6 +22,15 @@ function App() {
     role: 'Cannabis Specialist'
   }]);
 
+  const handleChange = event => {
+    setTeam({...team, [event.target.name]: event.target.value})
+  }
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    console.log(team)
+  }
+
   return (
     <div className="App">
       {console.log(team)}
@@ -41,7 +50,7 @@ function App() {
           )}
       </div>
 
-      <AddTeamMember />
+      <AddTeamMember handleChange={handleChange} />
     </div>
   );
 }
